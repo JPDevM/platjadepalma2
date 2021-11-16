@@ -1,0 +1,18 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ScrollbarsOut::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.ScrollbarsOut {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.ScrollContainerX{
+  scroll-snap-type: x mandatory;
+}
+
+.ScrollObjectSnap{
+  scroll-snap-align: center;
+}
