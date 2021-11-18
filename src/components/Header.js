@@ -20,7 +20,7 @@ import { Link, useParams, useLocation } from 'react-router-dom';
 const Header = () => {
   const [showShared, setShowShared] = useState(false);
   let location = useLocation();
-  console.log('location: ', location);
+  // console.log('location: ', location);
 
   return (
     <Fragment>

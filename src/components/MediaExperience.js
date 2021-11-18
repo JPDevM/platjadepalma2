@@ -11,6 +11,12 @@ import { StarIcon } from '@heroicons/react/solid';
 
 // Media
 import Slider from '../media/slider.png';
+import trenturistico2 from '../media/trenturistico2.jpg';
+// import Slider from '../media/slider.png';
+// import Slider from '../media/slider.png';
+
+
+
 
 const renderStar = (stars) => {
   let content = [];
@@ -39,7 +45,9 @@ const MediaExperience = ({ data }) => {
   return (
     <Fragment>
       <div className="w-full flex justify-between items-center"></div>
-      <img src={Slider} alt="404 error" className="w-full" />
+      <img src={trenturistico2} alt="404 error" className="w-full" />
+      { console.log('image:',image)}
+      {/* <img src={'../../public/images/aquarium2.jpg'} alt="404 error" className="w-full" /> */}
       <div className="flex flex-col px-4">
         <div className="py-4 border-b border-gray-300">
           <div className="font-bold text-2xl text-gray-700">{title}</div>

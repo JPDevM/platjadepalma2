@@ -1,7 +1,9 @@
 // Dependencies
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
-// Middlewares
+// Data
+import data from '../data/experiences.json';
 
 // Components
 import Header from '../components/Header';
@@ -12,27 +14,25 @@ import Footer from '../components/Footer';
 // Styles
 
 // Media
-import activity1 from '../media/tren-turistico2.jpg'
-const data = {
-  image: activity1,
-  title: 'TREN TURÍSTICO',
-  description:
-    'El tren turístico de City Sightseeing en Platja de Palma ofrece la mejor forma de recorrer y visitar la Platja de Palma. Contemple las vistas panorámicas la bahía de Palma dándose un agradable paseo con el tren.',
-  star: 5,
-  price: '€ 5',
-  url: '/tren-turistico',
-};
-
+import activity1 from '../media/trenturistico2.jpg';
 
 const Experience = () => {
-    const { image, title, description, star, price, url } = data;
+  let { id } = useParams();
 
   return (
     <Fragment>
-      <Header src={'./'} />
-      <MediaExperience data={ data } />
-      <Footer />
-      <ActionFooter src={'./'} />
+      {data.map((dataElement, index) =>
+        dataElement.url === '/' + id ? (
+          <div key={index}>
+            <Header src={'./'} />
+            <MediaExperience data={data[index]} />
+            <Footer />
+            <ActionFooter data={data[index]} />
+          </div>
+        ) : (
+          ''
+        )
+      )}
     </Fragment>
   );
 };

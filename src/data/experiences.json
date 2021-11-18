@@ -1,6 +1,6 @@
 [
   {
-    "image": "activity1",
+    "image": "trenturistico2.jpg",
     "title": "TREN TURÍSTICO",
     "description": "El tren turístico de City Sightseeing en Platja de Palma ofrece la mejor forma de recorrer y visitar la Platja de Palma. Contemple las vistas panorámicas la bahía de Palma dándose un agradable paseo con el tren.",
     "star": 5,
@@ -8,7 +8,7 @@
     "url": "/tren-turistico"
   },
   {
-    "image": "activity2",
+    "image": "aquarium2.jpg",
     "title": "PALMA AQUARIUM",
     "description": "La visita a Palma Aquarium es apta para todos los públicos, tanto adultos como familias y se puede complementar con otras actividades dentro del recinto que hacen de ésta, una experiencia aún más inolvidable.",
     "star": 5,
@@ -16,7 +16,7 @@
     "url": "/palma-aquarium"
   },
   {
-    "image": "activity3",
+    "image": "activity6.jpg",
     "title": "Paddle Surf",
     "description": "Completa tu experiencia con la posibilidad de navegar en el paddle surf y pasear por las calas de la zona.  Puedes navegar de pie o sentado con el modo kayak.",
     "star": 4,

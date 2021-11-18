@@ -1,7 +1,8 @@
 // Dependencies
 import React, { Fragment } from 'react';
 
-// Middlewares
+// Data
+import data from '../../data/experiences.json'
 
 // Components
 import Offer from './Offer';
@@ -9,40 +10,12 @@ import Offer from './Offer';
 // Styles
 
 // Media
-import activity1 from '../../media/tren-turistico2.jpg';
+import activity1 from '../../media/trenturistico2.jpg';
 import activity2 from '../../media/aquarium2.jpg';
 import activity3 from '../../media/activity6.jpg';
 
-// Data
-const data1 = {
-  image: activity1,
-  title: 'TREN TURÍSTICO',
-  description:
-    'El tren turístico de City Sightseeing en Platja de Palma ofrece la mejor forma de recorrer y visitar la Platja de Palma. Contemple las vistas panorámicas la bahía de Palma dándose un agradable paseo con el tren.',
-  star: 5,
-  price: '€ 5',
-  url: '/tren-turistico',
-};
-const data2 = {
-  image: activity2,
-  title: 'PALMA AQUARIUM',
-  description:
-    'La visita a Palma Aquarium es apta para todos los públicos, tanto adultos como familias y se puede complementar con otras actividades dentro del recinto que hacen de ésta, una experiencia aún más inolvidable.',
-  star: 5,
-  price: '€ 22',
-  url: '/palma-aquarium',
-};
-const data3 = {
-  image: activity3,
-  title: 'Paddle Surf',
-  description:
-    'Completa tu experiencia con la posibilidad de navegar en el paddle surf y pasear por las calas de la zona.  Puedes navegar de pie o sentado con el modo kayak.',
-  star: 4,
-  price: '€ 10',
-  url: '/paddle-surf',
-};
-
 const MonthlyOffers = () => {
+  // console.log('data:',data[1])
   // Returns current month name.
   const monthName = () => {
     const monthNames = [
@@ -71,10 +44,14 @@ const MonthlyOffers = () => {
           <span className="text-blue-500">{monthName()}</span>
         </p>
       </div>
+      {/* preparado para poner renderizar de a 3 */}
       <div className="w-full h-full space-y-10 px-4 sm:px-28 flex flex-col md:flex-row md:space-y-0 md:space-x-4 lg:space-x-8 xl:space-x-12 2xl:space-x-16">
-        <Offer data={data1} />
-        <Offer data={data2} />
-        <Offer data={data3} />
+        {data.map((value, index) =>
+          <Offer key={ index+'offers'} values={value} />
+        )}
+        {/* <Offer data={data[0]} />
+        <Offer data={data[1]} />
+        <Offer data={data[2]} /> */}
       </div>
     </Fragment>
   );
