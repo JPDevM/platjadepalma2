@@ -24,14 +24,14 @@ const Footer = () => {
               className="w-1/3 h-1/3 md:w-1/4 md:h-1/4 lg:w-1/6 lg:h-1/6 2xl:w-1/12 2xl:h-1/12"
             />
           </Link>
-          <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
+          <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8 w-full">
             {/* <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
               Contactactanos
             </p> */}
-            <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
+            <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800 w-1/3 text-right">
               <Link to="/terminosycondiciones">Terminos y condiciones</Link>
             </p>
-            <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
+            <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800 w-1/3 text-left">
               <Link to="/privacidad">Política de Privacidad</Link>
             </p>
           </div>
@@ -46,20 +46,21 @@ const Footer = () => {
                 rel={'noopener noreferrer'}
               >
                 <svg
-                className="fill-current text-gray-800 hover:text-gray-500"
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M21.5 11.0631C21.5 5.26467 16.7984 0.56311 11 0.56311C5.20156 0.56311 0.5 5.26467 0.5 11.0631C0.5 16.3037 4.33906 20.6476 9.35938 21.4361V14.0992H6.69266V11.0631H9.35938V8.74983C9.35938 6.11873 10.9273 4.6642 13.3255 4.6642C14.4744 4.6642 15.6763 4.86952 15.6763 4.86952V7.45373H14.3516C13.048 7.45373 12.6402 8.2628 12.6402 9.09436V11.0631H15.552L15.087 14.0992H12.6406V21.437C17.6609 20.649 21.5 16.3051 21.5 11.0631Z"
-                  fill="currentColor"
-                />
-              </svg></a>
+                  className="fill-current text-gray-800 hover:text-gray-500"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M21.5 11.0631C21.5 5.26467 16.7984 0.56311 11 0.56311C5.20156 0.56311 0.5 5.26467 0.5 11.0631C0.5 16.3037 4.33906 20.6476 9.35938 21.4361V14.0992H6.69266V11.0631H9.35938V8.74983C9.35938 6.11873 10.9273 4.6642 13.3255 4.6642C14.4744 4.6642 15.6763 4.86952 15.6763 4.86952V7.45373H14.3516C13.048 7.45373 12.6402 8.2628 12.6402 9.09436V11.0631H15.552L15.087 14.0992H12.6406V21.437C17.6609 20.649 21.5 16.3051 21.5 11.0631Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
             </div>
             <div className="cursor-pointer">
               {/* Instagram Icon Solid */}
@@ -93,9 +94,9 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-            <div className="cursor-pointer">
-              {/* Pinterest Icon Solid */}
-              {/* <svg
+            {/* <div className="cursor-pointer"> */}
+            {/* Pinterest Icon Solid */}
+            {/* <svg
                 className="fill-current text-gray-800 hover:text-gray-500"
                 width="24"
                 height="25"
@@ -108,10 +109,10 @@ const Footer = () => {
                   fill="currentColor"
                 />
               </svg> */}
-            </div>
+            {/* </div> */}
           </div>
           <div className="flex items-center mt-6">
-            <p className="text-base leading-4 text-gray-800 w-1/2">
+            <p className="text-base leading-4 text-gray-800 w-1/2 text-right">
               2021 <span className="font-semibold">Platja De Palma</span>
             </p>
             <div className="h-6 px-1 w-1/10"></div>

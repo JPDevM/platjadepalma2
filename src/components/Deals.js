@@ -35,7 +35,7 @@ const Deals = () => {
               Cancela de forma gratuita hasta 24 horas antes del comienzo de tu
               actividad y recibe un reembolso completo.
             </h2>
-            <div className="my-2 flex space-x-4">
+            {/* <div className="my-2 flex space-x-4">
               <a
                 href={
                   'https://www.instagram.com/explore/tags/playadecanpastilla/?hl=es'
@@ -69,7 +69,7 @@ const Deals = () => {
                   El Arenal
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="w-full custom-height mt-8 lg:mt-0 rounded-3xl">
             <div className="flex flex-row flex-nowrap justify-between h-auto space-x-4 sm:space-x-8 md:space-x-4 lg:space-x-8">

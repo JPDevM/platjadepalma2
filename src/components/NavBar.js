@@ -39,13 +39,13 @@ const NavBar = () => {
             <Router>
               <ul className="hidden lg:flex justify-center items-center space-x-10 cursor-pointer text-gray-800 text-base leading-4">
                 <li>
-                  <Link to={'experiencias/tren-turistico'}>Tren turístico</Link>
+                  <Link to={'experiencias/tren-turistico'}>Actividades</Link>
                 </li>
                 <li>
-                  <Link to={'experiencias/palma-aquarium'}>Palma aquarium</Link>
+                  <Link to={'experiencias/palma-aquarium'}>Palma de Mallorca</Link>
                 </li>
                 <li>
-                  <Link to={'experiencias/paddle-surf'}>Pddle surf</Link>
+                  <Link to={'experiencias/paddle-surf'}>Sobre nosotros</Link>
                 </li>
                 {/* <li>
                 <Link to="">Sobre Nosotros</Link>

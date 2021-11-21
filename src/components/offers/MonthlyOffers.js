@@ -40,7 +40,7 @@ const MonthlyOffers = () => {
     <Fragment>
       <div className="mx-auto container px-6 pt-24 lg:pt-32 pb-212 lg:pb-16 xl:px-0 my-12 text-3xl lg:text-6xl xl:text-8xl text-gray-800 tracking-1px font-extrabold leading-relaxed">
         <p className="text-center">
-          Mejores atracciones para{' '}
+          Mejores actividades para{' '}
           <span className="text-blue-500">{monthName()}</span>
         </p>
       </div>

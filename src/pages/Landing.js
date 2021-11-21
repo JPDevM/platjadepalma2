@@ -8,6 +8,7 @@ import NavBar from '../components/NavBar';
 import HeroSlider from '../components/HeroSlider';
 import Deals from '../components/Deals';
 import MonthlyOffers from '../components/offers/MonthlyOffers';
+import AboutUs from '../components/AboutUs.js';
 import FacebookChat from '../components/FacebookChat';
 import Footer from '../components/Footer';
 
@@ -28,6 +29,7 @@ const Landing = () => {
       <HeroSlider media={media} />
       <Deals />
       <MonthlyOffers />
+      <AboutUs />
       <FacebookChat />
       <Footer />
     </Fragment>

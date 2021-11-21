@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 // Media
 import Image404 from '../media/404.png';
-import ImageDisconect404 from '../media/404-disconect.png';
+import ImageDisconect404 from '../media/404v2.png';
 
 const Error404 = () => {
   return (
