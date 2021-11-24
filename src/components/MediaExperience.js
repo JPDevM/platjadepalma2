@@ -1,24 +1,20 @@
 // Dependencies
 import React, { Fragment } from 'react';
 import { StarIcon } from '@heroicons/react/solid';
-// <ArrowLeftIcon className="w-4 h-4 m-2" />;
 
 // Middlewares
 
 // Components
+import ImgGrid from './ImgGrid';
+import GoogleMap from './GoogleMap';
+import Slider from '../media/slider.png';
 
 // Styles
 
 // Media
-import Slider from '../media/slider.png';
-import trenturistico2 from '../media/trenturistico2.jpg';
-// import Slider from '../media/slider.png';
-// import Slider from '../media/slider.png';
-
-
-
 
 const renderStar = (stars) => {
+
   let content = [];
   for (let i = 0; i < 5; i++) {
     // console.log('i', i, 'stars', stars);
@@ -34,20 +30,16 @@ const renderStar = (stars) => {
   return content;
 };
 
-
-
 const MediaExperience = ({ data }) => {
-
   const { image, title, description, star, price, url } = data;
   const hashtag = url.replace('/', '#').concat('-mallorca');
   const tag = url.concat('-mallorca');
 
   return (
     <Fragment>
-      <div className="w-full flex justify-between items-center"></div>
-      <img src={trenturistico2} alt="404 error" className="w-full" />
-      { console.log('image:',image)}
-      {/* <img src={'../../public/images/aquarium2.jpg'} alt="404 error" className="w-full" /> */}
+      {/* <div className="w-full flex justify-between items-center"></div> */}
+      <ImgGrid data={data} />
+
       <div className="flex flex-col px-4">
         <div className="py-4 border-b border-gray-300">
           <div className="font-bold text-2xl text-gray-700">{title}</div>
@@ -70,9 +62,7 @@ const MediaExperience = ({ data }) => {
           <div className="cursor-pointer pt-2">
             {/* Instagram Icon Solid */}
             <a
-              href={
-                `https://www.instagram.com/explore/tags${tag}/?hl=es`
-              }
+              href={`https://www.instagram.com/explore/tags${tag}/?hl=es`}
               target={'_blank'}
               rel={'noopener noreferrer'}
               className="flex justify-start items-center"
@@ -103,6 +93,41 @@ const MediaExperience = ({ data }) => {
               </div>
             </a>
           </div>
+        </div>
+        <div className="">
+          <GoogleMap data={data}></GoogleMap>
+          {/* <Map
+            google={this.props.google}
+            zoom={14}
+            style={mapStyles}
+            initialCenter={{
+              lat: -1.2884,
+              lng: 36.8233,
+            }}
+          /> */}
+          {/* <GoogleMapReact
+            bootstrapURLKeys={{
+              // remove the key if you want to fork
+              key: 'AIzaSyDiKc4HxX5G7EfneIZBN_Hlk2_luoT_yvo',
+              language: 'es',
+              region: 'ES',
+            }}
+            defaultCenter={{ lat: 39.53917132519, lng: 2.713705281023331 }}
+            defaultZoom={14}
+            distanceToMouse={distanceToMouse}
+          >
+            {points.map(({ lat, lng, id, title }) => {
+              return (
+                <MyMarker
+                  key={id}
+                  lat={lat}
+                  lng={lng}
+                  text={id}
+                  tooltip={title}
+                />
+              );
+            })}
+          </GoogleMapReact> */}
         </div>
       </div>
     </Fragment>

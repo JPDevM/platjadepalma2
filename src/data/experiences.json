@@ -5,7 +5,22 @@
     "description": "El tren turístico de City Sightseeing en Platja de Palma ofrece la mejor forma de recorrer y visitar la Platja de Palma. Contemple las vistas panorámicas la bahía de Palma dándose un agradable paseo con el tren.",
     "star": 5,
     "price": "€ 5",
-    "url": "/tren-turistico"
+    "url": "/tren-turistico",
+    "time": 
+    [
+      "Lunes de 9hs. to 18hs.",
+      "Martes de 9hs. to 18hs.",
+      "Miércoles de 9hs. to 18hs.",
+      "Jueves de 9hs. to 18hs.",
+      "Viernes de 9hs. to 18hs.",
+      "Sádados de 9hs. to 18hs.",
+      "Domingos 9hs. to 18hs."
+    ],
+    "map":{
+      "lat": 39.53917132519,
+      "lng": 2.713705281023331,
+      "zoom": 14
+    }
   },
   {
     "image": "aquarium2.jpg",
@@ -13,7 +28,17 @@
     "description": "La visita a Palma Aquarium es apta para todos los públicos, tanto adultos como familias y se puede complementar con otras actividades dentro del recinto que hacen de ésta, una experiencia aún más inolvidable.",
     "star": 5,
     "price": "€ 22",
-    "url": "/palma-aquarium"
+    "url": "/palma-aquarium",
+    "time": [
+      "Lunes a viernes de 9hs. to 18hs.",
+      "Sábados y Domingos de 9hs. to 14hs.",
+      "Feriados de 10hs. a 12hs."
+    ],
+    "map": {
+      "lat": 39.53917132519,
+      "lng": 2.713705281023331,
+      "zoom": 14
+    }
   },
   {
     "image": "activity6.jpg",
@@ -21,6 +46,16 @@
     "description": "Completa tu experiencia con la posibilidad de navegar en el paddle surf y pasear por las calas de la zona.  Puedes navegar de pie o sentado con el modo kayak.",
     "star": 4,
     "price": "€ 10",
-    "url": "/paddle-surf"
+    "url": "/paddle-surf",
+    "time": [
+      "Lunes a viernes de 9hs. to 18hs.",
+      "Sábados y Domingos de 9hs. to 14hs.",
+      "Feriados de 10hs. a 12hs."
+    ],
+    "map": {
+      "lat": 39.53917132519,
+      "lng": 2.713705281023331,
+      "zoom": 14
+    }
   }
 ]
