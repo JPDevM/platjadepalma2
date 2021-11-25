@@ -1,6 +1,9 @@
+// Docs
+// https://www.digitalocean.com/community/tutorials/how-to-integrate-the-google-maps-api-into-react-applications
+
 // Dependencies
-import React, { Fragment, Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import React, { Component } from 'react';
+import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
 // Middlewares
 
@@ -16,17 +19,53 @@ const mapStyles = {
 // Media
 
 export class MapContainer extends Component {
+
+  state = {
+    showingInfoWindow: false, // Hides or shows the InfoWindow
+    activeMarker: {}, // Shows the active marker upon click
+    selectedPlace: {}, // Shows the InfoWindow to the selected place upon a marker
+  };
+
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true,
+    });
+
+  onClose = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null,
+      });
+    }
+  };
+
   render() {
+    // console.log('location:', this.props.data.map.lat, this.props.data.map.lng, this.props.data.map.zoom);
+    // console.log('title:', this.props.data.title );
     return (
       <Map
         google={this.props.google}
-        zoom={14}
+        zoom={this.props.data.map.zoom}
         style={mapStyles}
         initialCenter={{
-          lat: 39.53917132519,
-          lng: 2.713705281023331,
+          lat: this.props.data.map.lat,
+          lng: this.props.data.map.lng,
         }}
-      />
+      >
+        <Marker onClick={this.onMarkerClick} name={this.props.data.title} />
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          onClose={this.onClose}
+        >
+          <div>
+            <h4>{this.state.selectedPlace.name}</h4>
+          </div>
+        </InfoWindow>
+      </Map>
     );
   }
 }

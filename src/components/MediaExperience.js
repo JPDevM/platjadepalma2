@@ -7,7 +7,6 @@ import { StarIcon } from '@heroicons/react/solid';
 // Components
 import ImgGrid from './ImgGrid';
 import GoogleMap from './GoogleMap';
-import Slider from '../media/slider.png';
 
 // Styles
 import './_mediaExperience.css';
@@ -20,35 +19,35 @@ const renderStar = (stars) => {
     // console.log('i', i, 'stars', stars);
     if (i < stars)
       content.push(
-        <StarIcon key={stars + 'star'} className="w-5 h-5 text-yellow-500" />
+        <StarIcon key={stars + 'star'} className="w-6 h-6 text-yellow-500" />
       );
     else
       content.push(
-        <StarIcon key={stars + 'star'} className="w-5 h-5 text-gray-500" />
+        <StarIcon key={stars + 'star'} className="w-6 h-6 text-gray-500" />
       );
   }
   return content;
 };
 
 const MediaExperience = ({ data }) => {
-  const { image, title, description, star, time, url } = data;
+  const { price, title, description, star, time, url } = data;
   const hashtag = url.replace('/', '#').concat('-mallorca');
   const tag = url.concat('-mallorca');
 
   return (
     <Fragment>
-      {/* <div className="w-full flex justify-between items-center"></div> */}
+       {/* Images */}
       <ImgGrid data={data} />
 
+      {/* Title */}
+      <div className="m-4 border-b border-gray-300">
+        <div className="font-bold text-2xl text-gray-700">{title}</div>
+        <div className="my-2 flex flex-wrap content-center">
+          {renderStar(star)}
+        </div>
+      </div>
       <div className="flex flex-col md:flex-row md:px-4 md:space-x-4">
         <div className="flex flex-col px-4 md:px-0 md:w-1/2 min-w-1/2 md-max-w-50 md-min-w-50">
-          {/* Images */}
-          <div className="py-4 border-b border-gray-300">
-            <div className="font-bold text-2xl text-gray-700">{title}</div>
-            <div className="flex flex-wrap content-center">
-              {renderStar(star)}
-            </div>
-          </div>
           {/* About */}
           <div className="py-4 border-b border-gray-300">
             <div className="font-semibold text-2xl text-gray-700">
@@ -111,6 +110,19 @@ const MediaExperience = ({ data }) => {
               ))}
             </div>
           </div>
+          {/* Call to action: Duplicated from Action footer*/}
+          <div className="hidden md:flex w-full justify-between items-center p-4">
+            <div className="">
+              <span className="font-bold">{price}</span> por persona
+            </div>
+            <div className="">
+              <button className="focus:ring-indigo-700 focus:ring-2 focus:ring-offset-2 focus:outline-none text-white text-base font-semibold leading-none border-2 border-indigo-600 bg-gradient-to-r from-blue-600 to-blue-500 hover:to-blue-600 p-4 rounded">
+                Reservar ahora
+              </button>
+            </div>
+          </div>
+
+
         </div>
         {/* Map */}
         <div className="relative my-4 h-80 max-h-80 min-h-80 w-full md:w-1/2 md-max-w-50 md-min-w-50 md:h-auto md:min-h-full md:max-h-full">

@@ -29,24 +29,18 @@ const renderStar = (stars) => {
 };
 
 const Offer = ({ values }) => {
-  const { image, title, description, star, price, url } = values;
+  const { img, title, description, star, price, url } = values;
   // console.log('image:',image)
   // console.log('placeholderImg:',placeholderImg)
   return (
     <Fragment>
       <div className="w-full">
         <Link to={'/experiencias' + url}>
-          <div
+          <img
+            src={process.env.PUBLIC_URL + '/images' + url + '/' + img}
+            alt=":("
             className="w-full h-40 sm:h-80 md:h-40 lg:h-60 2xl:h-96 bg-cover bg-center"
-            style={
-              {
-                backgroundImage: `url(${placeholderImg})`,
-                // backgroundImage: `url('../../media/${image}')`,
-                // backgroundImage: `url(../../media/trenturistico2.jpg)`,
-                // backgroundImage: `url(../../../public/images/trenturistico2.jpg)`,
-              }
-            }
-          ></div>
+          />
           <div className="flex h-8 -mt-12">
             <div className="bg-white flex-nogrow rounded px-4 py-1 mx-4 text-gray-700">
               {price}

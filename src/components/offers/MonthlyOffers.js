@@ -45,13 +45,10 @@ const MonthlyOffers = () => {
         </p>
       </div>
       {/* preparado para poner renderizar de a 3 */}
-      <div className="w-full h-full space-y-10 px-4 sm:px-28 flex flex-col md:flex-row md:space-y-0 md:space-x-4 lg:space-x-8 xl:space-x-12 2xl:space-x-16">
-        {data.map((value, index) =>
-          <Offer key={ index+'offers'} values={value} />
-        )}
-        {/* <Offer data={data[0]} />
-        <Offer data={data[1]} />
-        <Offer data={data[2]} /> */}
+      <div className="space-y-10 mx-auto container px-6 flex flex-col md:flex-row md:space-y-0 md:space-x-4 lg:space-x-8 xl:space-x-12 2xl:space-x-16">
+        {data.map((value, index) => (
+          <Offer key={index + 'offers'} values={value} />
+        ))}
       </div>
     </Fragment>
   );

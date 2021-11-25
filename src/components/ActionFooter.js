@@ -14,7 +14,7 @@ const ActionFooter = ({ data }) => {
   const { price } = data;
   return (
     <Fragment>
-      <div className="lg:hidden w-full flex justify-between items-center fixed bottom-0 p-4 border-t border-gray-500 bg-white">
+      <div className="md:hidden w-full flex justify-between items-center fixed bottom-0 p-4 border-t border-gray-500 bg-white">
         <div className="">
           <span className="font-bold">{ price }</span> por persona
         </div>

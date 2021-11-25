@@ -56,12 +56,12 @@ const Header = () => {
                   <XIcon className="w-3 h-3 text-white" />
                 </div>
               </div>
-              <div class="flex items-center justify-between">
+              <div class="flex items-center justify-between mb-4">
                 <div class="flex flex-col ml-3">
                   <div class="font-medium leading-none">
                     Copiar al portapapeles
                   </div>
-                  <p class="text-sm text-gray-600 leading-none mt-2">
+                  <p class="text-sm text-gray-600 leading-none my-2">
                     https://www.platjadepalma.com{location.pathname}
                   </p>
                 </div>

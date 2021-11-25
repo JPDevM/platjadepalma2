@@ -1,13 +1,12 @@
 [
   {
-    "image": "trenturistico2.jpg",
+    "img": "tren-turistico-001.jpg",
     "title": "TREN TURÍSTICO",
     "description": "El tren turístico de City Sightseeing en Platja de Palma ofrece la mejor forma de recorrer y visitar la Platja de Palma. Contemple las vistas panorámicas la bahía de Palma dándose un agradable paseo con el tren.",
     "star": 5,
     "price": "€ 5",
     "url": "/tren-turistico",
-    "time": 
-    [
+    "time": [
       "Lunes de 9hs. a 18hs.",
       "Martes de 9hs. a 18hs.",
       "Miércoles de 9hs. a 18hs.",
@@ -16,14 +15,21 @@
       "Sádados de 9hs. a 18hs.",
       "Domingos 9hs. a 18hs."
     ],
-    "map":{
+    "map": {
       "lat": 39.53917132519,
       "lng": 2.713705281023331,
       "zoom": 14
-    }
+    },
+    "imgGrid": [
+      "tren-turistico-001.jpg",
+      "tren-turistico-002.jpg",
+      "tren-turistico-003.jpg",
+      "tren-turistico-004.jpg",
+      "tren-turistico-005.jpg"
+    ]
   },
   {
-    "image": "aquarium2.jpg",
+    "img": "palma-aquarium-001.jpg",
     "title": "PALMA AQUARIUM",
     "description": "La visita a Palma Aquarium es apta para todos los públicos, tanto adultos como familias y se puede complementar con otras actividades dentro del recinto que hacen de ésta, una experiencia aún más inolvidable.",
     "star": 5,
@@ -38,10 +44,17 @@
       "lat": 39.53917132519,
       "lng": 2.713705281023331,
       "zoom": 14
-    }
+    },
+    "imgGrid": [
+      "palma-aquarium-001.png",
+      "palma-aquarium-002.png",
+      "palma-aquarium-003.png",
+      "palma-aquarium-004.jpg",
+      "palma-aquarium-005.png"
+    ]
   },
   {
-    "image": "activity6.jpg",
+    "img": "paddle-surf-001.jpg",
     "title": "Paddle Surf",
     "description": "Completa tu experiencia con la posibilidad de navegar en el paddle surf y pasear por las calas de la zona.  Puedes navegar de pie o sentado con el modo kayak.",
     "star": 4,
@@ -56,6 +69,13 @@
       "lat": 39.53917132519,
       "lng": 2.713705281023331,
       "zoom": 14
-    }
+    },
+    "imgGrid": [
+      "paddle-surf-001.jpg",
+      "paddle-surf-002.png",
+      "paddle-surf-003.png",
+      "paddle-surf-004.png",
+      "paddle-surf-005.png"
+    ]
   }
 ]
