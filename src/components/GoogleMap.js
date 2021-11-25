@@ -8,6 +8,7 @@ import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 // Styles
 const mapStyles = {
+  // width: '100%',
   width: '100%',
   height: '100%',
 };

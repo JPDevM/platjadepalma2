@@ -8,13 +8,13 @@
     "url": "/tren-turistico",
     "time": 
     [
-      "Lunes de 9hs. to 18hs.",
-      "Martes de 9hs. to 18hs.",
-      "Miércoles de 9hs. to 18hs.",
-      "Jueves de 9hs. to 18hs.",
-      "Viernes de 9hs. to 18hs.",
-      "Sádados de 9hs. to 18hs.",
-      "Domingos 9hs. to 18hs."
+      "Lunes de 9hs. a 18hs.",
+      "Martes de 9hs. a 18hs.",
+      "Miércoles de 9hs. a 18hs.",
+      "Jueves de 9hs. a 18hs.",
+      "Viernes de 9hs. a 18hs.",
+      "Sádados de 9hs. a 18hs.",
+      "Domingos 9hs. a 18hs."
     ],
     "map":{
       "lat": 39.53917132519,
@@ -30,8 +30,8 @@
     "price": "€ 22",
     "url": "/palma-aquarium",
     "time": [
-      "Lunes a viernes de 9hs. to 18hs.",
-      "Sábados y Domingos de 9hs. to 14hs.",
+      "Lunes a viernes de 9hs. a 18hs.",
+      "Sábados y Domingos de 9hs. a 14hs.",
       "Feriados de 10hs. a 12hs."
     ],
     "map": {
@@ -48,8 +48,8 @@
     "price": "€ 10",
     "url": "/paddle-surf",
     "time": [
-      "Lunes a viernes de 9hs. to 18hs.",
-      "Sábados y Domingos de 9hs. to 14hs.",
+      "Lunes a viernes de 9hs. a 18hs.",
+      "Sábados y Domingos de 9hs. a 14hs.",
       "Feriados de 10hs. a 12hs."
     ],
     "map": {

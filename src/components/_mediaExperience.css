@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+  md-max-w-50 {
+    max-width: 50%;
+  }
+  md-min-w-50 {
+    min-width: 50%;
+  }
+}
