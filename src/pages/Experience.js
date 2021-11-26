@@ -1,5 +1,5 @@
 // Dependencies
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { useParams } from 'react-router-dom';
 
 // Data
@@ -14,7 +14,6 @@ import Footer from '../components/Footer';
 // Styles
 
 // Media
-import activity1 from '../media/trenturistico2.jpg';
 
 const Experience = () => {
   let { id } = useParams();

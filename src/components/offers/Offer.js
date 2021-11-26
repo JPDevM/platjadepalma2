@@ -9,7 +9,6 @@ import Experience from '../../pages/Experience';
 // Styles
 
 // Media
-import placeholderImg from '../../media/placeholderImg.png';
 
 // Assign the correct ornumber of stars
 const renderStar = (stars) => {

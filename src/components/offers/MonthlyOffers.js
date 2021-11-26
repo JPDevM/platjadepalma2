@@ -10,9 +10,6 @@ import Offer from './Offer';
 // Styles
 
 // Media
-import activity1 from '../../media/trenturistico2.jpg';
-import activity2 from '../../media/aquarium2.jpg';
-import activity3 from '../../media/activity6.jpg';
 
 const MonthlyOffers = () => {
   // console.log('data:',data[1])
@@ -38,7 +35,10 @@ const MonthlyOffers = () => {
 
   return (
     <Fragment>
-      <div className="mx-auto container px-6 pt-24 lg:pt-32 pb-212 lg:pb-16 xl:px-0 my-12 text-3xl lg:text-6xl xl:text-8xl text-gray-800 tracking-1px font-extrabold leading-relaxed">
+      <div
+        id="actividades"
+        className="mx-auto container px-6 pt-24 lg:pt-32 pb-212 lg:pb-16 xl:px-0 my-12 text-3xl lg:text-6xl xl:text-8xl text-gray-800 tracking-1px font-extrabold leading-relaxed"
+      >
         <p className="text-center">
           Mejores actividades para{' '}
           <span className="text-blue-500">{monthName()}</span>

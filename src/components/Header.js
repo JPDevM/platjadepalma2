@@ -6,7 +6,7 @@ import {
   ClipboardCopyIcon,
   XIcon,
 } from '@heroicons/react/outline';
-import { Link, useParams, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 // Middlewares
 

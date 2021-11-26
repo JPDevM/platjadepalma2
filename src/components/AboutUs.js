@@ -14,7 +14,10 @@ import check from '../media/check.png';
 const AboutUs = () => {
   return (
     <Fragment>
-      <div className="mx-auto container px-6 pt-24 lg:pt-32 pb-212 lg:pb-16 xl:px-0 my-12">
+      <div
+        id="sobre-nosotros"
+        className="mx-auto container px-6 pt-24 lg:pt-32 pb-212 lg:pb-16 xl:px-0 my-12"
+      >
         <p className="text-center text-3xl lg:text-6xl xl:text-8xl text-gray-800 tracking-1px font-extrabold leading-relaxed">
           Actividades filtradas por{' '}
           <span className="text-blue-500">residentes</span> de Palma de

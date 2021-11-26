@@ -8,12 +8,10 @@ import React, { Fragment } from 'react';
 // Styles
 
 // Media
-import trenturistico2 from '../media/trenturistico2.jpg';
-
 
 const ImgGrid = ({ data }) => {
   const { url, imgGrid } = data;
-  console.log('imgGrid: ',imgGrid[0]);
+  // console.log('imgGrid: ',imgGrid[0]);
   return (
     <Fragment>
       <div className="my-4 grid grid-cols-1 md:grid-cols-5 md:px-4 lg:grid-cols-7 gap-2 h-72 lg:h-96">
